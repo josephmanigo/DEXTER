@@ -360,11 +360,25 @@ export default function Home() {
         .main-footer { padding: 40px 0; border-top: 1px solid var(--glass-border); text-align: center; font-size: 11px; letter-spacing: 2px; color: var(--text-muted); opacity: 0.5; }
 
         @media (max-width: 968px) {
+          .page-wrapper { padding-top: 80px; }
           .hero-content-wrapper { grid-template-columns: 1fr; text-align: center; gap: 40px; }
-          .hero-heading { font-size: 48px; }
-          .hero-text { display: flex; flex-direction: column; align-items: center; }
-          .panel-body { grid-template-columns: 1fr; }
-          .nav-bar { width: calc(100% - 20px); top: 10px; }
+          .hero-heading { font-size: 42px; letter-spacing: -1px; }
+          .hero-text { display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
+          .hero-subtext { font-size: 16px; margin-bottom: 30px; }
+          .panel-body { grid-template-columns: 1fr; gap: 30px; }
+          .nav-bar { width: calc(100% - 16px); top: 8px; padding: 0 16px; }
+          .upload-panel { padding: 30px 20px; min-height: 380px; }
+          .trigger-title { font-size: 20px; }
+          .panel-header { flex-direction: column; gap: 20px; text-align: center; margin-bottom: 40px; }
+          .panel-header h2 { font-size: 32px; }
+          .projection-card { height: 320px; }
+        }
+
+        @media (max-width: 480px) {
+          .hero-heading { font-size: 36px; }
+          .synthesis-box { padding: 0 10px; }
+          .blueprint-card { padding: 20px; }
+          .column-head { font-size: 11px; letter-spacing: 1.5px; }
         }
       `}</style>
     </div>
