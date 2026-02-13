@@ -308,9 +308,9 @@ export default function Home() {
         }
 
         /* Synthesis Center */
-        .main-center { flex: 1; padding: 40px 24px; }
-        .synthesis-box { max-width: 900px; margin: 0 auto; }
-        .upload-panel { min-height: 480px; border-radius: 32px; display: flex; align-items: center; justify-content: center; padding: 60px; transition: all 0.5s ease; }
+        .main-center { flex: 1; padding: 40px 24px; display: flex; align-items: center; justify-content: center; }
+        .synthesis-box { width: 100%; max-width: 500px; margin: 0 auto; }
+        .upload-panel { min-height: 420px; border-radius: 32px; display: flex; align-items: center; justify-content: center; padding: 40px; transition: all 0.5s ease; }
         
         .upload-trigger { text-align: center; cursor: pointer; }
         .trigger-orb {
