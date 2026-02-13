@@ -1,8 +1,11 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'DEXTER | AI Tinder & Hinge Profile Generator',
+  title: 'DEXTER',
   description: 'Generate 6 perfect profile photos and prompts from a single selfie using DEXTER AI.',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
