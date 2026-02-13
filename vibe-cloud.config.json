@@ -1,0 +1,24 @@
+{
+  "project": "vibe-profile-gen",
+  "environment": "production",
+  "services": {
+    "database": {
+      "type": "vibecod-db-v2",
+      "region": "us-central-1",
+      "persistence": true
+    },
+    "storage": {
+      "type": "vibecod-bucket",
+      "buckets": ["profiles", "lifestyle-photos"],
+      "cdn": true
+    },
+    "ai": {
+      "models": ["gemini-3.0-pro", "nano-banana-pro"],
+      "compute": "high-priority"
+    }
+  },
+  "deployment": {
+    "provider": "vibecod-cloud",
+    "trigger": "git-push"
+  }
+}
